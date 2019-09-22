@@ -110,6 +110,15 @@ nav{
     text-align: center;
 }
 
+nav h2{
+    grid-area: nav;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+}
+
 section{
     grid-area: jogo;
     width: 100vw;
