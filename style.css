@@ -9,6 +9,77 @@ grid-template-rows: 20vh 10vh 60vh 10vh;
 margin: 0;
 }
 
+#coluna1 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna1 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna2 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna3 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna4 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna5 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna6 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna7 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna8 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna9 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 main{
     grid-area: vez;
     display: flex;
@@ -48,6 +119,7 @@ section{
     align-items: center;
     justify-content: center;
 }
+
 
 .velha{
     /* align-items: center; */
