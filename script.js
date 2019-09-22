@@ -65,6 +65,7 @@ function j2O(){
 function X1(){
     coluna1.innerHTML = ("X");
     coluna1.style.color = "red";
+    var coluna
     j2O();
 }
 
