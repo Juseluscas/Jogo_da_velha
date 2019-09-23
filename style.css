@@ -5,9 +5,80 @@ body{
                          'jogo jogo jogo jogo'
                          'footer footer footer footer';
 grid-template-columns: 25vw 25vw 25vw 25vw;
-grid-template-rows: 20vh 10vh 60vh 10vh;
+grid-template-rows: 18vh 18vh 60vh 10vh;
 margin: 0;
 }
+
+#coluna1 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna1 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna2 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna3 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna4 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna5 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna6 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna7 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna8 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coluna9 {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 main{
     grid-area: vez;
@@ -34,9 +105,20 @@ main h3{
 
 nav{
     grid-area: nav;
+    background-color: rgb(248, 140, 77);
     align-items: center;
     position: relative;
     text-align: center;
+}
+
+
+nav h2{
+    grid-area: nav;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    position: relative;
+    top: 50px;
 }
 
 section{
@@ -48,6 +130,7 @@ section{
     align-items: center;
     justify-content: center;
 }
+
 
 .velha{
     /* align-items: center; */
