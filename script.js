@@ -9,6 +9,9 @@ let coluna6 = document.querySelector('#coluna6')
 let coluna7 = document.querySelector('#coluna7')
 let coluna8 = document.querySelector('#coluna8')
 let coluna9 = document.querySelector('#coluna9')
+var contadorX = 0;
+var contadorO = 0;
+
 
 var vezJogador = getRandomInt(1,2);
 
@@ -21,6 +24,8 @@ function Selecao(){
     alert('Bem vindo ao jogo da velha');
     var j1 = prompt('Nome do jogador 1');
     var j2 = prompt('Nome do jogador numero 2');
+    // var i = 100
+    // while(i != 100){
     if(vezJogador % 2 == 0){
         alert(`O JOGADOR ${j1} IRÁ INICIAR A PARTIDA !!!`);
         j1X();
@@ -58,26 +63,27 @@ function j2O(){
     coluna9.onclick = O9;
 }
 
+
+
 function X1(){
     coluna1.innerHTML = ("X");
     coluna1.style.color = "red";
+    var contadorX = contadorX + 1;
     ganhouX();
 }
 
 function X2(){
     coluna2.innerHTML = ("X");
     coluna2.style.color = "red";
+    var contadorX = contadorX + 1;
     ganhouX();
     
-}
-
-if (coluna2.innerHTML == "X"){
-   let contadorX = (contadorX + 1);
 }
 
 function X3(){
     coluna3.innerHTML = ("X");
     coluna3.style.color = "red"; 
+    var contadorX = contadorX + 1;
     ganhouX();
     
 }
@@ -85,6 +91,7 @@ function X3(){
 function X4(){
     coluna4.innerHTML = ("X");
     coluna4.style.color = "red";
+    var contadorX = contadorX + 1;
     ganhouX();
     
 }
@@ -92,6 +99,7 @@ function X4(){
 function X5(){
     coluna5.innerHTML = ("X");
     coluna5.style.color = "red";
+    var contadorX = contadorX + 1;
     ganhouX();
     
 }
@@ -99,6 +107,7 @@ function X5(){
 function X6(){
     coluna6.innerHTML = ("X");
     coluna6.style.color = "red";
+    var contadorX = contadorX + 1;
     ganhouX();
     
 }
@@ -106,6 +115,7 @@ function X6(){
 function X7(){
     coluna7.innerHTML = ("X");
     coluna7.style.color = "red";
+    var contadorX = contadorX + 1;
     ganhouX();
     
 }
@@ -113,42 +123,49 @@ function X7(){
 function X8(){
     coluna8.innerHTML = ("X");
     coluna8.style.color = "red";  
+    var contadorX = contadorX + 1;
     ganhouX();
 }
 
 function X9(){
     coluna9.innerHTML = ("X");
     coluna9.style.color = "red";
+    var contadorX = contadorX + 1;
     ganhouX();
 }
 
 function O1(){
     coluna1.innerHTML = ("O");
     coluna1.style.color = "blue";
+    var contadorO = contadorO + 1;
     ganhouO();
 }
 
 function O2(){
     coluna2.innerHTML = ("O");
     coluna2.style.color = "blue";
+    var contadorO = contadorO + 1;
     ganhouO();
 }
 
 function O3(){
     coluna3.innerHTML = ("O");
     coluna3.style.color = "blue";
+    var contadorO = contadorO + 1;
     ganhouO();
 }
 
 function O4(){
     coluna4.innerHTML = ("O");
     coluna4.style.color = "blue";
+    var contadorO = contadorO + 1;
     ganhouO();
 }
 
 function O5(){
     coluna5.innerHTML = ("O");
     coluna5.style.color = "blue";
+    var contadorO = contadorO + 1;
     ganhouO();
 }
 
@@ -169,12 +186,14 @@ var contadorO = contadorO + 1;
 function O8(){
     coluna8.innerHTML = ("O");
     coluna8.style.color = "blue";
+    var contadorO = contadorO + 1;
     ganhouO();
 }
 
 function O9(){
     coluna9.innerHTML = ("O");
     coluna9.style.color = "blue";
+    var contadorO = contadorO + 1;
     ganhouO();
 }    
 
@@ -182,7 +201,7 @@ function O9(){
 function ganhouX(){
     if((coluna1.innerHTML == "X" && coluna2.innerHTML == "X" && coluna3.innerHTML == "X") || (coluna4.innerHTML == "X" && coluna5.innerHTML == "X" && coluna6.innerHTML == "X") || (coluna7.innerHTML == "X" && coluna8.innerHTML == "X" && coluna9.innerHTML == "X") || (coluna1.innerHTML == "X" && coluna4.innerHTML == "X" && coluna7.innerHTML == "X") || (coluna2.innerHTML == "X" && coluna5.innerHTML == "X" && coluna8.innerHTML == "X") || (coluna3.innerHTML == "X" && coluna6.innerHTML == "X" && coluna9.innerHTML == "X") || (coluna1.innerHTML == "X" && coluna5.innerHTML == "X" && coluna9.innerHTML == "X") || (coluna3.innerHTML == "X" && coluna5.innerHTML == "X" && coluna7.innerHTML == "X")
         ){
-        alert("Você ganhou!!")
+        alert("O jogador X Ganhou !!")
         let textjogador = ("VOCÊ FOI O VENCEDOR ");
         textgamer.innerHTML = textjogador;}
     else if(contadorX == 9){
@@ -196,7 +215,7 @@ function ganhouX(){
 function ganhouO(){
     if((coluna1.innerHTML == "O" && coluna2.innerHTML == "O" && coluna3.innerHTML == "O") || (coluna4.innerHTML == "O" && coluna5.innerHTML == "O" && coluna6.innerHTML == "O") || (coluna7.innerHTML == "O" && coluna8.innerHTML == "O" && coluna9.innerHTML == "O") || (coluna1.innerHTML == "O" && coluna4.innerHTML == "O" && coluna7.innerHTML == "O") || (coluna2.innerHTML == "O" && coluna5.innerHTML == "O" && coluna8.innerHTML == "O") || (coluna3.innerHTML == "O" && coluna6.innerHTML == "O" && coluna9.innerHTML == "O") || (coluna1.innerHTML == "O" && coluna5.innerHTML == "O" && coluna9.innerHTML == "O") || (coluna3.innerHTML == "O" && coluna5.innerHTML == "O" && coluna7.innerHTML == "O")
         ){
-        alert("Você ganhou!!")
+        alert("O jogador O ganhou!!")
         let textjogador = ("VOCÊ FOI O VENCEDOR ");
         textgamer.innerHTML = textjogadoelse }
     else if(contadorO == 9){

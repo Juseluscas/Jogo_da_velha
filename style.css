@@ -111,7 +111,6 @@ nav{
     text-align: center;
 }
 
-
 nav h2{
     grid-area: nav;
     display: flex;
